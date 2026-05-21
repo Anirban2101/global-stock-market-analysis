@@ -1,22 +1,22 @@
-📈 Global Stock Market Intelligence — 10-Year Multi-Market Analysis
-"If you had invested ₹1,00,000 in Indian stocks vs US stocks in 2016 — which portfolio would be worth more today?"
+### 📈 Global Stock Market Intelligence — 10-Year Multi-Market Analysis
+
+## "If you had invested ₹1,00,000 in Indian stocks vs US stocks in 2016 — which portfolio would be worth more today?"
 A complete end-to-end data analytics project analyzing 20 global stocks across Indian (NSE) and US (NYSE/NASDAQ) markets over 10 years. Unlike typical portfolio projects, data was collected live and programmatically from Yahoo Finance's data feed using Python — the same way real financial data pipelines work in industry.
 
-🗂️ Dataset
-
+## 🗂️ Dataset
 Source: Yahoo Finance live data feed via yfinance Python library — not a static CSV download
 Stocks: 10 Indian (NSE) + 10 US (NYSE/NASDAQ) — NVDA, AAPL, TSLA, MSFT, RELIANCE, TCS, BAJFINANCE, ICICIBANK and more
 Period: May 2016 — May 2026 (10 years)
 Size: 51,860 rows of daily OHLCV data
 
 
-🛠️ Tools Used
+## 🛠️ Tools Used
 Python (yfinance, pandas, matplotlib, seaborn) — live data collection, cleaning, feature engineering, EDA visualizations
 MySQL — 10 business SQL queries using window functions, subqueries, CTEs, and statistical functions
 Microsoft Excel — pivot tables, AVERAGEIF formulas, conditional formatting
 Microsoft Power BI — 4-page interactive dark-themed dashboard with DAX measures
 
-💡 Key Business Findings
+## 💡 Key Business Findings
 💰 ₹1,00,000 in US stocks in 2016 → ₹30,88,770 today. Same investment in Indian stocks → ₹4,63,886 — a 6.7x difference over identical time periods
 🏆 NVDA delivered 21,716% total return over 10 years, driven by the AI chip supercycle post-2022. WIPRO delivered the lowest at 107%
 📉 Indian banks crashed hardest during COVID — BAJFINANCE averaged -2.82% daily in March 2020. HINDUNILVR gained +0.36% the same month — consumer staples demand surged during lockdowns
@@ -26,7 +26,7 @@ Microsoft Power BI — 4-page interactive dark-themed dashboard with DAX measure
 🔍 HINDUNILVR traded at 104x its normal volume on May 7, 2020 — detected through SQL volume anomaly analysis, coinciding with exceptional COVID-era quarterly results
 📍 AAPL and GOOGL are currently trading at or near their 52-week highs (100% and 97.6% positioning) while several Indian IT stocks sit near yearly lows
 
-🖥️ Dashboard Preview
+## 🖥️ Dashboard Preview
 Page 1 — Global Market Overview
 <img width="962" height="541" alt="Screenshot 2026-05-20 173811" src="https://github.com/user-attachments/assets/455d0f76-f598-4a52-aa61-7b967b424cdb" />
 
@@ -39,11 +39,10 @@ Page 3 — Market Crisis & Recovery Analysis
 Page 4 — Portfolio & Investment Intelligence
 <img width="961" height="539" alt="Screenshot 2026-05-20 173957" src="https://github.com/user-attachments/assets/4294d313-65c9-4077-b003-6a77a401f16b" />
 
-🗃️ SQL Analysis
+## 🗃️ SQL Analysis
 Ten business queries covering total return analysis, risk-adjusted returns, India vs US market comparison, year-by-year performance, COVID crash and recovery analysis, consistency ranking, volume anomaly detection, 52-week high/low positioning, and portfolio simulation. See stock_queries.sql for full code.
 
-⚙️ How to Run
-
+## ⚙️ How to Run
 pip install yfinance pandas matplotlib seaborn sqlalchemy mysql-connector-python
 Run stock_analysis.ipynb in Jupyter Notebook — pulls live data, cleans, and loads into MySQL automatically
 Run stock_queries.sql in MySQL Workbench
